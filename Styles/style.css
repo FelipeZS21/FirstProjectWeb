@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -9,22 +12,36 @@ html {
 }
 
 header {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: red;
-    padding: 3rem;
 }
 
 .intro {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 40rem;
-    background-color: blue;
     align-items: center;
-    font-size: 1.6rem;
+    color: rgb(240, 240, 240); 
+    background-image: url(/Imgs/background-header-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0rem -40rem;
 }
 
 .intro h1 {
     align-items: center;
+    font-size: 6.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.intro h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 4.5rem;
 }
