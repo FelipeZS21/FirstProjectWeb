@@ -55,7 +55,7 @@ header {
 nav {
     width: 100%;
     display: flex; 
-    background-color: black;
+    background-color: rgb(12, 12, 12);
     height: 8.5rem;
     justify-content: space-around;
     align-items: center;
@@ -131,5 +131,4 @@ main {
 .main-division-conocimiento {
     width: 50%;
     height: 50rem;
-    
 }
