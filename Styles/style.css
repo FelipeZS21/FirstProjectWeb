@@ -11,6 +11,9 @@ html {
     font-size: 62.5%;
 }
 
+/* ------ HEADER DE LA PAGINA ------- */
+
+/* ------ BANNER ------ */
 header {
     width: 100%;
     display: flex;
@@ -30,7 +33,7 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0rem -40rem;
+    background-position: 0rem -30rem;
 }
 
 .intro h1 {
@@ -45,3 +48,43 @@ header {
     font-family: 'Teko', sans-serif;
     font-size: 4.5rem;
 }
+
+/* ------ NAVEGADOR ------ */
+
+
+nav {
+    width: 100%;
+    display: flex; 
+    background-color: black;
+    height: 8.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav p {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding: 0 1.7rem;
+}
+
+nav img {
+    width: 6.5rem; 
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    padding-left: 1.7rem;
+}
+
+.nav-list a{
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+
