@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+:root{
+    --color-font: rgb(8, 28, 83); 
+    --font-family1:  'Fjalla One', sans-serif; 
+}
 
 * {
     padding: 0;
@@ -9,11 +13,11 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* ------ HEADER DE LA PAGINA ------- */
 
-/* ------ BANNER ------ */
 header {
     width: 100%;
     display: flex;
@@ -21,25 +25,28 @@ header {
     justify-content: center;
 }
 
+/* ------ BANNER ------ */
+
 .intro {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40rem;
+    height: 100vh;
     align-items: center;
     color: rgb(240, 240, 240); 
     background-image: url(../Imgs/background.jpg);
+    background-position: 0 -50rem;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0rem -10rem;
+    margin-bottom: 2rem;
 }
 
 .intro h1 {
     align-items: center;
     font-size: 6.5rem;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--font-family1);
     text-decoration: underline;
     text-underline-position: under;
 }
@@ -49,86 +56,103 @@ header {
     font-size: 4.5rem;
 }
 
-/* ------ NAVEGADOR ------ */
-
-
-nav {
-    width: 100%;
-    display: flex; 
-    background-color: rgb(12, 12, 12);
-    height: 8.5rem;
-    justify-content: space-around;
-    align-items: center;
+.intro img{
+    width: 6rem;
 }
 
-nav p {
-    font-family: 'Fjalla One', sans-serif;
-    color: white;
-    font-size: 2rem;
-    padding: 0 1.7rem;
-}
+/* ------- NAV BAR -------*/
 
-nav img {
-    width: 6.5rem; 
-}
-
-.nav-list {
+.nav-bar {
     display: flex;
-    list-style: none;
-}
-.nav-list li{
-    padding-left: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
 }
 
-.nav-list a{
-    font-family: 'Fjalla One', sans-serif;
-    color: white;
+.nav-bar ul{
+    padding-top: 1rem ;
+    display: flex;
+    list-style: none;  
+    justify-content: space-around;
     font-size: 1.7rem;
-    text-decoration: none;
+    font-family: var(--font-family1);
+}
 
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 16rem;
+    padding: 0rem 2rem;
+    margin: 2rem 3rem;
+    border-radius: 3rem;
+    border-color: white;
+    border-style: solid;
+    
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
 }
 
 /* ------ MAIN CONTENT -------- */
 
 main {
     display: flex;
-    height: 50rem;
-    background-image: url(../Imgs/background.jpg);
+    height: 60rem;
+    background-color: white;
+    background-position: 0 -50rem;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0rem -10rem;
 }
 
 /* ------- MAIN CONTENT ABOUT ME -------  */
 .main-division-about-me {
-    width: 50%;
-    height: 50rem;
-    background-color: rgba(0, 0, 0, 0.603);
+    width: 100%;
+    height: 43rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    margin: 0 1.5rem;
 }
 
-.main-division-about-me h2 {
+.img-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-about-me img{
+    width: 16rem;
+    border-radius:50%;
+    border-style: solid;
+    border-color: var(--color-font);
+}
+
+.text-main-division-about-me {
     width: 100%;
-    font-size: 4rem;
-    padding: 1.5rem;
-    color: white;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
     font-family: 'Teko', sans-serif;
+}
+
+.text-main-division-about-me h3{
+    padding-top: 2rem;
+    font-size: 3rem;
+    padding-left: 1rem;
 }
 
 .main-division-about-me p{
-    width: 100%;
-    font-size: 2.5rem;
-    padding: 1.5rem;
-    color: white;
-    font-family: 'Teko', sans-serif;
+    font-size: 2.3rem;
+    padding: 1rem;
 }
 
 /* ------- MAIN CONTENT LEARNING -------  */
-.main-division-conocimiento {
-    width: 50%;
-    height: 50rem;
-}
